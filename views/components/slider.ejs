@@ -1,0 +1,46 @@
+<!-- slider Area Start-->
+<div class="slider-area ">
+    <!-- Mobile Menu -->
+    <div class="slider-active">
+        <div class="single-slider slider-height d-flex align-items-center" data-background="img/hero/h1_hero.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-9 col-md-10">
+                        <div class="hero__caption">
+                            <h1>Conectando Profissionais e Clientes</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search Box -->
+                <div class="row">
+                    <div class="col-xl-8">
+                        <!-- form -->
+                        <form action="#" class="search-box">
+                            <div class="input-form">
+                                <input id="searchInput" type="text" placeholder="Título do Job ou Palavra-chave">
+                            </div>
+                            <div class="select-form">
+                                <div class="select-itms">
+                                    <select name="select" id="stateSelect">
+                                        <option value="" selected>Qualquer</option>
+                                        <option value="acre">Acre</option>
+                                        <option value="rondonia">Rondônia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="search-form">
+                                <a id="search">Encontre um Job</a>
+                                <script>
+                                    document.getElementById('search').addEventListener('click', () => {
+                                        if (document.getElementById("searchInput").value.length === 0) return;
+                                        location.href = `/jobs?pesquisa=${document.getElementById("searchInput").value.toLowerCase()}&estado=${document.getElementById("stateSelect").value}`
+                                    });
+                                </script>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "name": "gestao-de-conectividade",
+  "version": "1.0.0",
+  "description": "Ofertas de Trabalho",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "raulrodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "@firebase/app": "^0.7.22",
+    "@firebase/auth": "^0.19.12",
+    "@firebase/database": "^0.12.8",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "http-errors": "^2.0.0",
+    "moment": "^2.29.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-google-oauth": "^2.0.0",
+    "path": "^0.12.7",
+    "search-engine": "^1.1.0"
+  }
+}

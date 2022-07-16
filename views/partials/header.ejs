@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        <%= og.title %>
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script>
+        moment.locale('pt-br');   
+    </script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/price_rangs.css">
+    <link rel="stylesheet" href="/css/slicknav.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/themify-icons.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/nice-select.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparrent">
+            <div class="headder-top header-sticky"  style="z-index: 998;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-2">
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="/"><img src="/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="menu-wrapper">
+                                <!-- Main-menu -->
+                                <div class="main-menu">
+                                    <nav class="d-none d-lg-block">
+                                        <ul id="navigation">
+                                            <li><a href="/">Página Principal</a></li>
+                                            <li><a href="/jobs">Encontre Jobs</a></li>
+
+                                            <li><a href="#">Políticas</a>
+                                                <ul class="submenu">
+                                                    <li><a href="/sobre">Sobre</a></li>
+                                                    <li><a href="/tos">Política de Privacidade</a></li>
+                                                    <li><a href="/pop">Termos de Uso</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/ajuda">Ajuda</a></li>
+                                            <% if(user) { %>
+
+                                                <a class=" d-block d-lg-none" data-toggle="modal"
+                                                    data-target="#modalUser"><img style="border-radius: 50px;"
+                                                        width="50" height="50" src="<%=user.photo%>" /></a>
+                                                <% } else { %>
+                                                    <li class="btn  d-block d-lg-none"><a style="color:white;"
+                                                            href="/auth/google">Login</a></li>
+                                                    <% } %>
+                                        </ul>
+
+                                    </nav>
+                                </div>
+                                <!-- Header-btn -->
+                                <div class="header-btn d-none f-right d-lg-block">
+                                    <% if(user) { %>
+                                        <a data-toggle="modal" data-target="#modalUser"><img
+                                                style="border-radius: 50px;" width="50" height="50"
+                                                src="<%=user.photo%>" /></a>
+                                        <% } else { %>
+                                            <a href="/auth/google" class="btn head-btn2">Entrar</a>
+                                            <% } %>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+     <% if(user) { %>
+    <div class="modal fade" id="modalUser" tabindex="-1" role="dialog" aria-labelledby="modalUserLabel"
+        aria-hidden="true">
+        <div class="modal-dialog"  style="z-index: 999;" role="document">
+            <div class="modal-content">
+                <a href="/dashboard" type="button" class="btn btn-secondary">Dashboard</a>
+                        <a href="/chat" type="button" class="btn btn-secondary">Chat</a>
+                        <a href="/nots" type="button" class="btn btn-secondary">Notificações</a>
+                        
+                <div class="modal-header">
+                    <h5>Contas</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    
+                </div>
+                <div class="modal-body">
+                    <img style="border-radius: 100px;" src="<%=user.photo%>" width="50" height="50" alt=""> <%=user.name%> (Freelancer) | <a style="color: green;" href="/dashboard/freelancer">Entrar</a>
+                    <hr>
+                    <img style="border-radius: 100px;" src="<%=user.photo%>" width="50" height="50" alt=""> <%=user.name%> (Recrutador) | <a style="color: green;" href="/dashboard/recrutador">Entrar</a>
+                 
+                </div>
+                <div class="modal-footer">
+                   <a style="color: black;" href="/auth/logout">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% } %>

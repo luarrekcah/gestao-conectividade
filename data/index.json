@@ -1,0 +1,135 @@
+{
+    "agencys": [
+        {
+            "id":"raul-rodrigues",
+            "cnpj":"939293939/39939-1",
+            "ownerId":"25151515",
+            "logoURL":"https://cdn.glitch.global/55ea3463-31d7-4807-9eee-98d4f54e9d89/logo-raul-rodrigues-redonda.png?v=1652401084923",
+            "about":"Profissional Individual de Design e Desenvolvimento",
+            "name":"Raul Rodrigues - RR",
+            "website":"www.devluar.com",
+            "email":"contato@devluar.com"
+        }
+    ],
+    "peoples": [
+        {
+            "id":"232333232",
+            "recruiter":false,
+            "personalData": {
+                "name":"Raul",
+                "fullName":"Rodrigues",
+                "cpf":"32313331",
+                "birthday":"10-10-10",
+                "photoURL":"",
+                "about":""
+            }
+        }
+    ],
+    "jobs": [
+        {
+            "visible": "public",
+            "featured": true,
+            "ended":false,
+            "payd":false,
+            "agency":true,
+            "id": "6181-designer",
+            "author": {
+                "id":"raul-rodrigues",
+                "cnpj":"939293939/39939-1",
+                "ownerId":"25151515",
+                "logoURL":"https://cdn.glitch.global/55ea3463-31d7-4807-9eee-98d4f54e9d89/logo-raul-rodrigues-redonda.png?v=1652401084923",
+                "about":"Profissional Individual de Design e Desenvolvimento",
+                "name":"Raul Rodrigues - RR",
+                "website":"www.devluar.com",
+                "email":"contato@devluar.com"
+            }, 
+            "title": "Designer Gráfico",
+            "location": {
+                "city":"Rio Branco",
+                "state":"Acre"
+            },
+            "priceOffer": "R$1500-2000",
+            "description": "Alta taxa de recrutamento na empresa, trabalho diretamente pelo escritório com direito aos vales e carteira assinada.",
+            "requiredForApply": {
+                "skills": [
+                    "1 ano de Photoshop",
+                    "2 anos de corelDRAW",
+                    "Informática Básica"
+                ],
+                "education": [
+                    "Bacharel/Tecnólogo em Design Gráfico",
+                    "Ensino médio completo",
+                    "CNH A/B"
+                ]
+            },
+            "postedDate": "2022-05-05T11:21:50-05:00",
+            "vacancy": "05",
+            "jobNature": "Integral",
+            "tags": ["Ux/Desing", "Marketing"],
+            "usersApplyed": ["030403040", "3434939934"],
+            "primaryCateg": "artdesign"
+        },
+        {
+            "visible": "public",
+            "featured": true,
+            "ended":false,
+            "payd":false,
+            "agency":true,
+            "id": "622181-desenvolvedor",
+            "author": {
+                "id":"raul-rodrigues",
+                "cnpj":"939293939/39939-1",
+                "ownerId":"25151515",
+                "logoURL":"https://cdn.glitch.global/55ea3463-31d7-4807-9eee-98d4f54e9d89/logo-raul-rodrigues-redonda.png?v=1652401084923",
+                "about":"Profissional Individual de Design e Desenvolvimento",
+                "name":"Raul Rodrigues - RR",
+                "website":"www.devluar.com",
+                "email":"contato@devluar.com"
+            }, 
+            "title": "Desenvolvedor de Software",
+            "location": {
+                "city":"Ariquemes",
+                "state":"Rondonia"
+            },
+            "priceOffer": "R$5000-8000",
+            "description": "Alta taxa de recrutamento na empresa, trabalho diretamente pelo escritório com direito aos vales e carteira assinada.",
+            "requiredForApply": {
+                "skills": [
+                    "1 ano de Photoshop",
+                    "2 anos de corelDRAW",
+                    "Informática Básica"
+                ],
+                "education": [
+                    "Bacharel/Tecnólogo em Design Gráfico",
+                    "Ensino médio completo",
+                    "CNH A/B"
+                ]
+            },
+            "postedDate": "2022-05-13T21:44:45-05:00",
+            "vacancy": "05",
+            "jobNature": "Integral",
+            "tags": ["Desenvolvimento", "Marketing"],
+            "usersApplyed": ["030403040", "3434939934"],
+            "primaryCateg": "webdev"
+        }
+    ],
+    "blogPosts": [
+        {
+            "id":"projeto-em-andamento",
+            "tags": ["Novidade"],
+            "title":"Gestão Conectividade em Desenvolvimento",
+            "banner":"",
+            "author": null,
+            "content": [
+                {
+                 "element":"p",
+                 "content":"AA"
+                },
+                {
+                    "element":"quotes",
+                    "content":"AAA"
+                }
+            ]
+        }
+    ]
+}
